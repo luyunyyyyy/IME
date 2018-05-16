@@ -27,9 +27,15 @@ public class Main {
                 logger.debug("quit");
                 break;
             }
+            /*
+            模块的功能入口
+            TODO 0516 下午的工作
+            1. 要把 result 抽象成一个类，以便于容纳候选词的数组 还要重写一下toString方法。然后提供一个通过索引访问单词的方法
+            2. 要考虑参数的配置问题 比如说候选词的大小
+             */
             if (pinyinPattern.matcher(input).matches()) {
                 logger.debug("input is pinyin");
-
+                result =
                 result = setResult(input);
             } else {
                 logger.debug("input is not pinyin");
