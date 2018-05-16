@@ -23,3 +23,10 @@
 2018-05-16 10:46:03  [ main:0 ] - [ INFO ]  调用 main 
 2018-05-16 10:46:18  [ main:14042 ] - [ INFO ]  输入法运行结束 
 2018-05-16 10:51:17  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-16 10:51:30  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-16 10:52:29  [ main:58920 ] - [ INFO ]  input is pinyin
+2018-05-16 10:53:07  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-16 10:53:30  [ main:23022 ] - [ DEBUG ]  input : b1
+2018-05-16 10:53:30  [ main:23023 ] - [ DEBUG ]  input is not pinyin
+2018-05-16 10:53:35  [ main:27590 ] - [ DEBUG ]  input : 啊
+2018-05-16 10:53:35  [ main:27591 ] - [ DEBUG ]  input is not pinyin
