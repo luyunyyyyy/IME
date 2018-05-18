@@ -5,7 +5,7 @@ import java.util.List;
 /*
 
  */
-public interface BaseFrontEndResult {
+public interface SplitResult {
     List<String> getAllResult();
 
     String getMaxResult();
