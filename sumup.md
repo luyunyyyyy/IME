@@ -6,8 +6,13 @@
 4. java 获取终端输入的方法 link https://blog.csdn.net/hongweigg/article/details/14448731
 5. IDEA 的重构快捷方式 使用了抽取方法  link https://www.cnblogs.com/opensesame/p/6089753.html
 
+
+1. 概率要取log 这样可以从累乘变成累加
+2. 工厂方法 link https://www.cnblogs.com/zhangchenliang/p/3700820.html
 # 遇到的问题
 1. java 中怎么实现那种类似逐字符访问，监听的读取。
+2. 配置怎么访问，应该不能做成一个全局的对象
+
 
 
 
