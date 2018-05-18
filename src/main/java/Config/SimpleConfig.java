@@ -1,6 +1,6 @@
 package Config;
 
-public final class SimpleConfig {
+public final class SimpleConfig implements ConfigService {
 
     private SimpleConfig() {
         // restrict instantiation
