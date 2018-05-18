@@ -24,7 +24,7 @@ public class Main {
     private static void runFrontEnd(Scanner sc) {
         Pattern pinyinPattern = Pattern.compile("^[A-Za-z]+$");
         String input, result;
-        FrontEndService frontEndService = null;
+        FrontEndService frontEndService = init();
         while (true) {
             System.out.print("input:");
             input = sc.next();
