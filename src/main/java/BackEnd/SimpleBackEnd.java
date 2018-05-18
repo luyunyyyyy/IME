@@ -10,6 +10,11 @@ public class SimpleBackEnd implements BackEndService {
         this.imEngineFactoryService = imEngineFactoryService;
     }
 
+    @Override
+    public IMEngineFactoryService getIMEngineFactory(String uuid) {
+        return null;
+    }
+
     public IMEngineFactoryService getIMEngineFactory() {
         return imEngineFactoryService;
     }
