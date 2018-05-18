@@ -1,11 +1,11 @@
-package FrontEnd;
+package Util;
 
 import java.util.List;
 
 /*
 
  */
-public interface FrontEndResultBase {
+public interface BaseFrontEndResult {
     List<String> getAllResult();
 
     String getMaxResult();
