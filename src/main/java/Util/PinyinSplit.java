@@ -21,6 +21,11 @@ public class PinyinSplit {
     这个方法会在beijing 切分后变成 bei\sjing\s
     末尾有空格
      */
+    /*
+        TODO 此处应该使用一个数组, 保存的是切分结果和每个位置对应的类别
+
+     */
+
     public static String splitSpell(String s) {
         String regEx = "[^aoeiuv]?h?[iuv]?(ai|ei|ao|ou|er|ang?|eng?|ong|a|o|e|i|u|ng|n)?";
         int tag = 0;
@@ -37,6 +42,10 @@ public class PinyinSplit {
         }
 
         return spell;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(splitSpell("beijdxue"));
     }
 
 }
