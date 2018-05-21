@@ -7,6 +7,8 @@ import IMEngine.IMEngineInstance;
 import Util.PinyinSplit;
 import org.apache.log4j.Logger;
 
+import java.util.List;
+
 public class SimpleFrontEnd implements FrontEndService {
     private Logger logger = Logger.getLogger(SimpleFrontEnd.class);
     private BackEndService backEndService;
@@ -15,19 +17,21 @@ public class SimpleFrontEnd implements FrontEndService {
     public SimpleFrontEnd(BackEndService backEndService) {
         logger.debug("SimpleFrontEnd 构造方法被调用");
         this.backEndService = backEndService;
+        init();
     }
 
     public void init() {
         logger.debug("SimpleFrontEnd init方法被调用");
+        addIMEngineInstance();
 
     }
 
     public String handleInputWords(String input) {
         logger.debug("SimpleFrontEnd handleInputWords 方法被调用");
         String result = PinyinSplit.splitSpell(input);
+        List<String> candidate = imEngineInstance.getCandidateWord(result);
 
-        //imEngineFactoryService.
-        return result;
+        return String.join("-", candidate);
     }
 
     @Override

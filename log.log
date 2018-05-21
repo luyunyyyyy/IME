@@ -1,35 +1,62 @@
-2018-05-16 10:26:04  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:26:04  [ main:11 ] - [ INFO ]  输入法运行结束 
-2018-05-16 10:29:21  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:29:21  [ main:13 ] - [ INFO ]  输入法运行结束 
-2018-05-16 10:30:08  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:30:08  [ main:15 ] - [ INFO ]  输入法运行结束 
-2018-05-16 10:32:10  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:38:06  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:40:18  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:40:27  [ main:9186 ] - [ DEBUG ]  input : beijing
-2018-05-16 10:40:51  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:40:56  [ main:4801 ] - [ DEBUG ]  input : beijing
-2018-05-16 10:41:04  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:41:09  [ main:4400 ] - [ DEBUG ]  input : beijing
-2018-05-16 10:41:11  [ main:7051 ] - [ DEBUG ]  input : q
-2018-05-16 10:41:11  [ main:7051 ] - [ DEBUG ]  quit
-2018-05-16 10:41:11  [ main:7051 ] - [ INFO ]  输入法运行结束 
-2018-05-16 10:45:41  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:45:44  [ main:3270 ] - [ DEBUG ]  input : beijing
-2018-05-16 10:46:01  [ main:20319 ] - [ DEBUG ]  input : q
-2018-05-16 10:46:01  [ main:20320 ] - [ DEBUG ]  quit
-2018-05-16 10:46:01  [ main:20320 ] - [ INFO ]  输入法运行结束 
-2018-05-16 10:46:03  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:46:18  [ main:14042 ] - [ INFO ]  输入法运行结束 
-2018-05-16 10:51:17  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:51:30  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:52:29  [ main:58920 ] - [ INFO ]  input is pinyin
-2018-05-16 10:53:07  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 10:53:30  [ main:23022 ] - [ DEBUG ]  input : b1
-2018-05-16 10:53:30  [ main:23023 ] - [ DEBUG ]  input is not pinyin
-2018-05-16 10:53:35  [ main:27590 ] - [ DEBUG ]  input : 啊
-2018-05-16 10:53:35  [ main:27591 ] - [ DEBUG ]  input is not pinyin
-2018-05-16 14:43:33  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-16 14:43:37  [ main:4369 ] - [ DEBUG ]  input : beijing
-2018-05-16 14:43:37  [ main:4370 ] - [ DEBUG ]  input is pinyin
+2018-05-21 10:17:16  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-21 10:17:16  [ main:125 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-21 10:17:19  [ main:3867 ] - [ DEBUG ]  input : beijign
+2018-05-21 10:17:20  [ main:3883 ] - [ DEBUG ]  input is pinyin
+2018-05-21 10:17:20  [ main:3883 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
+2018-05-21 10:17:27  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-21 10:17:27  [ main:31 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-21 10:17:31  [ main:4094 ] - [ DEBUG ]  input : beijing
+2018-05-21 10:17:31  [ main:4094 ] - [ DEBUG ]  input is pinyin
+2018-05-21 10:17:38  [ main:10938 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
+2018-05-21 10:42:43  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-21 10:42:43  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-21 10:42:43  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
+2018-05-21 10:42:43  [ main:15 ] - [ DEBUG ]  加载 IMEngineInstance 成功
+2018-05-21 10:42:46  [ main:2513 ] - [ DEBUG ]  input : beijing
+2018-05-21 10:42:46  [ main:2513 ] - [ DEBUG ]  input is pinyin
+2018-05-21 10:42:46  [ main:2513 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
+2018-05-21 10:42:46  [ main:2513 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
+2018-05-21 10:44:20  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-21 10:44:20  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-21 10:44:20  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
+2018-05-21 10:44:20  [ main:31 ] - [ DEBUG ]  加载 IMEngineInstance 成功
+2018-05-21 10:44:24  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-21 10:44:24  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-21 10:44:24  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
+2018-05-21 10:44:24  [ main:15 ] - [ DEBUG ]  加载 IMEngineInstance 成功
+2018-05-21 10:44:26  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-21 10:44:26  [ main:16 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-21 10:44:26  [ main:16 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
+2018-05-21 10:44:26  [ main:31 ] - [ DEBUG ]  加载 IMEngineInstance 成功
+2018-05-21 10:44:29  [ main:2853 ] - [ DEBUG ]  input : beijing
+2018-05-21 10:44:29  [ main:2853 ] - [ DEBUG ]  input is pinyin
+2018-05-21 10:44:31  [ main:5298 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
+2018-05-21 10:44:40  [ main:13859 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
+2018-05-21 10:45:18  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-21 10:45:18  [ main:16 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-21 10:45:18  [ main:16 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
+2018-05-21 10:45:18  [ main:16 ] - [ DEBUG ]  加载 IMEngineInstance 成功
+2018-05-21 10:45:30  [ main:12234 ] - [ DEBUG ]  input : beijing
+2018-05-21 10:45:30  [ main:12234 ] - [ DEBUG ]  input is pinyin
+2018-05-21 10:45:33  [ main:14752 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
+2018-05-21 10:45:33  [ main:14767 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
+2018-05-21 10:45:36  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-21 10:45:36  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-21 10:45:36  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
+2018-05-21 10:45:36  [ main:15 ] - [ DEBUG ]  加载 IMEngineInstance 成功
+2018-05-21 10:45:39  [ main:2714 ] - [ DEBUG ]  input : beijing
+2018-05-21 10:45:39  [ main:2714 ] - [ DEBUG ]  input is pinyin
+2018-05-21 10:45:39  [ main:2714 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
+2018-05-21 10:45:39  [ main:2714 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
+2018-05-21 10:45:47  [ main:10452 ] - [ DEBUG ]  input : tianjin
+2018-05-21 10:45:47  [ main:10452 ] - [ DEBUG ]  input is pinyin
+2018-05-21 10:45:47  [ main:10452 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
+2018-05-21 10:45:47  [ main:10452 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
+2018-05-21 10:45:49  [ main:12909 ] - [ DEBUG ]  input : shanghai
+2018-05-21 10:45:49  [ main:12909 ] - [ DEBUG ]  input is pinyin
+2018-05-21 10:45:49  [ main:12909 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
+2018-05-21 10:45:49  [ main:12909 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
+2018-05-21 10:45:56  [ main:19110 ] - [ DEBUG ]  input : beijingshizhongguancunruanjianyuan
+2018-05-21 10:45:56  [ main:19110 ] - [ DEBUG ]  input is pinyin
+2018-05-21 10:45:56  [ main:19110 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
+2018-05-21 10:45:56  [ main:19110 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列

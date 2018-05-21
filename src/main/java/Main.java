@@ -45,6 +45,7 @@ public class Main {
 
                 result = frontEndService.handleInputWords(input);
                 //result = setResult(input);
+
             } else {
                 logger.debug("input is not pinyin");
                 break;
