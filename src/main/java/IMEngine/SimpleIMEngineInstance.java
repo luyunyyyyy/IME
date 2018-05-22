@@ -1,8 +1,6 @@
 package IMEngine;
 
-import Util.CandidateItem;
-import Util.PairComparator;
-import Util.SplitResultItem;
+import Util.*;
 import javafx.util.Pair;
 import org.apache.log4j.Logger;
 
@@ -32,6 +30,7 @@ public class SimpleIMEngineInstance implements IMEngineInstance {
         这个地方需要返回一个带评分的数组, 每个元素是候选词和对应的一个评分
      */
     @Override
+    @Deprecated
     public List<String> getCandidateWord(String pySeries) {
         logger.debug("调用 getCandidateWord 获得拼音切分序列");
         ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(pySeries.split(" ")));
@@ -54,8 +53,38 @@ public class SimpleIMEngineInstance implements IMEngineInstance {
 
     @Override
     public List<CandidateItem> getCandidateWords(List<SplitResultItem> splitResultItems) {
-
-        return getSimpleSpellCandidateWords(splitResultItems);
+        PinYinInputType pinYinInputType = PinYinInputType.MIXEDINPUT;
+        Set<PinYinItemType> pinYinItemTypeSet = new HashSet<>();
+        List<CandidateItem> candidateItemList = null;
+        for (SplitResultItem item : splitResultItems) {
+            pinYinItemTypeSet.add(item.getPyType());
+        }
+        if (pinYinItemTypeSet.contains(PinYinItemType.OTHERSPELL)) {
+            pinYinInputType = PinYinInputType.OTHERINPUT;
+        } else if (pinYinItemTypeSet.contains(PinYinItemType.SIMPLESPELL) &&
+                pinYinItemTypeSet.contains(PinYinItemType.COMPLETESPELL)) {
+            pinYinInputType = PinYinInputType.MIXEDINPUT;
+        } else if (pinYinItemTypeSet.contains(PinYinItemType.SIMPLESPELL)) {
+            pinYinInputType = PinYinInputType.SIMPLESPELLINPUT;
+        } else if (pinYinItemTypeSet.contains(PinYinItemType.COMPLETESPELL)) {
+            pinYinInputType = PinYinInputType.COMPLETESPELLINPUT;
+        }
+        switch (pinYinInputType) {
+            case MIXEDINPUT:
+                logger.debug("pinYinInputType is MIXEDINPUT");
+                break;
+            case COMPLETESPELLINPUT:
+                logger.debug("pinYinInputType is COMPLETESPELLINPUT");
+                break;
+            case SIMPLESPELLINPUT:
+                logger.debug("pinYinInputType is SIMPLESPELLINPUT");
+                candidateItemList = getSimpleSpellCandidateWords(splitResultItems);
+                break;
+            case OTHERINPUT:
+                logger.debug("pinYinInputType is OTHERINPUT");
+                break;
+        }
+        return candidateItemList;
     }
 
 
@@ -69,7 +98,7 @@ public class SimpleIMEngineInstance implements IMEngineInstance {
         if (simpleSpellDict.containsKey(simpleSpell) && simpleSpellDict.get(simpleSpell).size() != 0) {
             // todo 遍历集合 然后找到value最大的k个
             ArrayList<Pair<String, Double>> simpleEntries = simpleSpellDict.get(simpleSpell);
-            Collections.sort(simpleEntries, new PairComparator());
+            simpleEntries.sort(new PairComparator());
             for (int i = 0; i < Math.min(CANDIDATE_WORDS_COUNT, simpleEntries.size()); i++) {
                 candidateItems.add(new CandidateItem(simpleEntries.get(i).getKey(), simpleEntries.get(i).getValue()));
             }

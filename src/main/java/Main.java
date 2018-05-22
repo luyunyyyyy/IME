@@ -65,6 +65,9 @@ public class Main {
                     System.out.print(i + "." + candidateWords.get(i).getCandidateWord() + "\t");
                 }
                 System.out.println("");
+            } else {
+                logger.info("无结果 candidateWords == null is null");
+                System.out.println("无结果");
             }
         }
     }

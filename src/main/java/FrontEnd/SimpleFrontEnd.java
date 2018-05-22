@@ -10,7 +10,6 @@ import Util.SplitResultItem;
 import org.apache.log4j.Logger;
 
 import java.util.List;
-
 /*
     下午要做的 TODO
     1. 如果FrontEnd作为一个调度器和组合的模块, 可以通过 BackEnd 来进行注入
@@ -54,7 +53,10 @@ public class SimpleFrontEnd implements FrontEndService {
 //        List<String> candidate = imEngineInstance.getCandidateWord(result);
         List<SplitResultItem> simpleSplitResult = PinyinSplit.getSplitResultItems(input);
         List<CandidateItem> candidateItemList = imEngineInstance.getCandidateWords(simpleSplitResult);
-        logger.debug("candidateItemList count : " + candidateItemList.size());
+        if (candidateItemList != null)
+            logger.debug("candidateItemList count : " + candidateItemList.size());
+        else
+            logger.debug("candidateItemList is null");
         return candidateItemList;
     }
 
