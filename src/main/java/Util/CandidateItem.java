@@ -1,6 +1,8 @@
 package Util;
 
 public class CandidateItem {
+    // 这个变量有问题, 关系整错了 应该是一个候选词包含一个词的拼音. 这个变量不能用
+    @Deprecated
     private SplitResultItem splitResult;
     private String candidateWord;
     private Double score;
@@ -8,11 +10,15 @@ public class CandidateItem {
     public CandidateItem() {
     }
 
-    public CandidateItem(SplitResultItem splitResult, String candidateWord, Double score) {
-        this.splitResult = splitResult;
+    public CandidateItem(String candidateWord, Double score) {
         this.candidateWord = candidateWord;
         this.score = score;
     }
+
+    public CandidateItem(String candidateWord) {
+        this.candidateWord = candidateWord;
+    }
+
 
     public SplitResultItem getSplitResult() {
         return splitResult;
