@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+/error.log
+/log.log.2018-05-21
+/log.log
+/log.log.2018-05-18
+/simpleSpellDict.dat
+/src/main/java/TrainData/TestTrain.java
+/src/main/resources/source/dictword.txt
+/src/main/resources/trained_data/simpleSpellDict.dat
+/src/main/resources/simple-spell-set.txt
+/src/main/resources/spellset.txt

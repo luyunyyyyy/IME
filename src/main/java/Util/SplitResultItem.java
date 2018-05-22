@@ -3,7 +3,7 @@ package Util;
 public class SplitResultItem {
 
     private String pyItem;
-    private PinYinType pyType;
+    private PinYinItemType pyType;
 
     public String getPyItem() {
         return pyItem;
@@ -13,16 +13,16 @@ public class SplitResultItem {
         this.pyItem = pyItem;
     }
 
-    public PinYinType getPyType() {
-        return pyType;
-    }
-
-    public void setPyType(PinYinType pyType) {
+    public SplitResultItem(String pyItem, PinYinItemType pyType) {
+        this.pyItem = pyItem;
         this.pyType = pyType;
     }
 
-    public SplitResultItem(String pyItem, PinYinType pyType) {
-        this.pyItem = pyItem;
+    public PinYinItemType getPyType() {
+        return pyType;
+    }
+
+    public void setPyType(PinYinItemType pyType) {
         this.pyType = pyType;
     }
 

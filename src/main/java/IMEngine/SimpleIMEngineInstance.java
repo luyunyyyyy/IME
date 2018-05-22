@@ -54,6 +54,12 @@ public class SimpleIMEngineInstance implements IMEngineInstance {
 
     @Override
     public List<CandidateItem> getCandidateWords(List<SplitResultItem> splitResultItems) {
+
+        return getSimpleSpellCandidateWords(splitResultItems);
+    }
+
+
+    private List<CandidateItem> getSimpleSpellCandidateWords(List<SplitResultItem> splitResultItems) {
         StringBuilder inputItem = new StringBuilder();
         List<CandidateItem> candidateItems = new ArrayList<>();
         for (SplitResultItem splitResultItem : splitResultItems) {
@@ -76,4 +82,5 @@ public class SimpleIMEngineInstance implements IMEngineInstance {
         }
         return candidateItems;
     }
+
 }

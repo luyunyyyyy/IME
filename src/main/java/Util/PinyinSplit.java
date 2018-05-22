@@ -52,16 +52,16 @@ public class PinyinSplit {
         List<SplitResultItem> splitResultItems = new LinkedList<>();
         Set<String> completeSpellSet = SimpleConfig.getCompleteSpellSet();
         Set<String> simpleSpellSet = SimpleConfig.getSimpleSpellSet();
-        PinYinType type;
+        PinYinItemType type;
         for (String tmp : splitResult) {
             if (completeSpellSet.contains(tmp)) {
-                type = PinYinType.COMPLETESPELL;
+                type = PinYinItemType.COMPLETESPELL;
                 //splitResultItems.add(new SplitResultItem(tmp, PinYinType.COMPLETESPELL));
             } else if (simpleSpellSet.contains(tmp)) {
-                type = PinYinType.SIMPLESPELL;
+                type = PinYinItemType.SIMPLESPELL;
                 //splitResultItems.add(new SplitResultItem(tmp, PinYinType.SIMPLESPELL));
             } else {
-                type = PinYinType.OTHERSPELL;
+                type = PinYinItemType.OTHERSPELL;
             }
             splitResultItems.add(new SplitResultItem(tmp, type));
         }

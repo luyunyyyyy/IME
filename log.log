@@ -1,62 +1,354 @@
-2018-05-21 10:17:16  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-21 10:17:16  [ main:125 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
-2018-05-21 10:17:19  [ main:3867 ] - [ DEBUG ]  input : beijign
-2018-05-21 10:17:20  [ main:3883 ] - [ DEBUG ]  input is pinyin
-2018-05-21 10:17:20  [ main:3883 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
-2018-05-21 10:17:27  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-21 10:17:27  [ main:31 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
-2018-05-21 10:17:31  [ main:4094 ] - [ DEBUG ]  input : beijing
-2018-05-21 10:17:31  [ main:4094 ] - [ DEBUG ]  input is pinyin
-2018-05-21 10:17:38  [ main:10938 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
-2018-05-21 10:42:43  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-21 10:42:43  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
-2018-05-21 10:42:43  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
-2018-05-21 10:42:43  [ main:15 ] - [ DEBUG ]  加载 IMEngineInstance 成功
-2018-05-21 10:42:46  [ main:2513 ] - [ DEBUG ]  input : beijing
-2018-05-21 10:42:46  [ main:2513 ] - [ DEBUG ]  input is pinyin
-2018-05-21 10:42:46  [ main:2513 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
-2018-05-21 10:42:46  [ main:2513 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
-2018-05-21 10:44:20  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-21 10:44:20  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
-2018-05-21 10:44:20  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
-2018-05-21 10:44:20  [ main:31 ] - [ DEBUG ]  加载 IMEngineInstance 成功
-2018-05-21 10:44:24  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-21 10:44:24  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
-2018-05-21 10:44:24  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
-2018-05-21 10:44:24  [ main:15 ] - [ DEBUG ]  加载 IMEngineInstance 成功
-2018-05-21 10:44:26  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-21 10:44:26  [ main:16 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
-2018-05-21 10:44:26  [ main:16 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
-2018-05-21 10:44:26  [ main:31 ] - [ DEBUG ]  加载 IMEngineInstance 成功
-2018-05-21 10:44:29  [ main:2853 ] - [ DEBUG ]  input : beijing
-2018-05-21 10:44:29  [ main:2853 ] - [ DEBUG ]  input is pinyin
-2018-05-21 10:44:31  [ main:5298 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
-2018-05-21 10:44:40  [ main:13859 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
-2018-05-21 10:45:18  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-21 10:45:18  [ main:16 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
-2018-05-21 10:45:18  [ main:16 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
-2018-05-21 10:45:18  [ main:16 ] - [ DEBUG ]  加载 IMEngineInstance 成功
-2018-05-21 10:45:30  [ main:12234 ] - [ DEBUG ]  input : beijing
-2018-05-21 10:45:30  [ main:12234 ] - [ DEBUG ]  input is pinyin
-2018-05-21 10:45:33  [ main:14752 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
-2018-05-21 10:45:33  [ main:14767 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
-2018-05-21 10:45:36  [ main:0 ] - [ INFO ]  调用 main 
-2018-05-21 10:45:36  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
-2018-05-21 10:45:36  [ main:15 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
-2018-05-21 10:45:36  [ main:15 ] - [ DEBUG ]  加载 IMEngineInstance 成功
-2018-05-21 10:45:39  [ main:2714 ] - [ DEBUG ]  input : beijing
-2018-05-21 10:45:39  [ main:2714 ] - [ DEBUG ]  input is pinyin
-2018-05-21 10:45:39  [ main:2714 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
-2018-05-21 10:45:39  [ main:2714 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
-2018-05-21 10:45:47  [ main:10452 ] - [ DEBUG ]  input : tianjin
-2018-05-21 10:45:47  [ main:10452 ] - [ DEBUG ]  input is pinyin
-2018-05-21 10:45:47  [ main:10452 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
-2018-05-21 10:45:47  [ main:10452 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
-2018-05-21 10:45:49  [ main:12909 ] - [ DEBUG ]  input : shanghai
-2018-05-21 10:45:49  [ main:12909 ] - [ DEBUG ]  input is pinyin
-2018-05-21 10:45:49  [ main:12909 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
-2018-05-21 10:45:49  [ main:12909 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
-2018-05-21 10:45:56  [ main:19110 ] - [ DEBUG ]  input : beijingshizhongguancunruanjianyuan
-2018-05-21 10:45:56  [ main:19110 ] - [ DEBUG ]  input is pinyin
-2018-05-21 10:45:56  [ main:19110 ] - [ DEBUG ]  SimpleFrontEnd handleInputWords 方法被调用
-2018-05-21 10:45:56  [ main:19110 ] - [ DEBUG ]  调用 getCandidateWord 获得拼音切分序列
+2018-05-22 10:30:10  [ main:1 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果bj
+2018-05-22 10:30:10  [ main:13 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 2
+2018-05-22 10:30:10  [ main:13 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='背景', score=2.0}
+2018-05-22 10:30:10  [ main:13 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北京', score=1.0}
+2018-05-22 10:36:57  [ main:0 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果tj
+2018-05-22 10:36:57  [ main:4 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 10:36:57  [ main:4 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='天津', score=22707.0}
+2018-05-22 10:36:57  [ main:4 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='团结', score=114.0}
+2018-05-22 10:36:57  [ main:5 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='桃江', score=92.0}
+2018-05-22 10:36:57  [ main:5 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='停车', score=86.0}
+2018-05-22 10:36:57  [ main:6 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='天街', score=84.0}
+2018-05-22 10:36:57  [ main:6 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='天健', score=64.0}
+2018-05-22 10:36:57  [ main:6 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='天骄', score=64.0}
+2018-05-22 10:36:57  [ main:6 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='天虹', score=58.0}
+2018-05-22 10:36:57  [ main:7 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='同江', score=53.0}
+2018-05-22 10:36:57  [ main:7 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='头街', score=50.0}
+2018-05-22 10:36:57  [ main:7 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='通江', score=50.0}
+2018-05-22 10:36:57  [ main:7 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='天际', score=34.0}
+2018-05-22 10:36:57  [ main:7 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='同济', score=34.0}
+2018-05-22 10:36:57  [ main:8 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='太极', score=27.0}
+2018-05-22 10:36:57  [ main:9 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='余江', score=25.0}
+2018-05-22 10:51:24  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-22 10:51:24  [ main:52 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-22 10:51:24  [ main:52 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
+2018-05-22 10:51:24  [ main:52 ] - [ DEBUG ]  加载 IMEngineInstance 成功
+2018-05-22 10:51:26  [ main:1970 ] - [ DEBUG ]  input : bj
+2018-05-22 10:51:26  [ main:1971 ] - [ DEBUG ]  input is pinyin
+2018-05-22 10:51:26  [ main:1972 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : bj
+2018-05-22 10:51:51  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-22 10:51:51  [ main:19 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-22 10:51:51  [ main:20 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
+2018-05-22 10:51:51  [ main:20 ] - [ DEBUG ]  加载 IMEngineInstance 成功
+2018-05-22 10:51:55  [ main:3406 ] - [ DEBUG ]  input : bj
+2018-05-22 10:51:55  [ main:3407 ] - [ DEBUG ]  input is pinyin
+2018-05-22 10:51:55  [ main:3407 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : bj
+2018-05-22 10:59:42  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-22 10:59:45  [ main:3448 ] - [ DEBUG ]  loadSpellDict dict size : 442916
+2018-05-22 10:59:45  [ main:3514 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-22 10:59:45  [ main:3515 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
+2018-05-22 10:59:45  [ main:3519 ] - [ DEBUG ]  加载 IMEngineInstance 成功
+2018-05-22 11:01:02  [ main:80501 ] - [ DEBUG ]  input : bj
+2018-05-22 11:01:02  [ main:80502 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:01:02  [ main:80502 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : bj
+2018-05-22 11:01:02  [ main:80531 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果bj
+2018-05-22 11:01:02  [ main:80531 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 11:01:02  [ main:80532 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北京', score=59295.0}
+2018-05-22 11:01:02  [ main:80532 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北街', score=2957.0}
+2018-05-22 11:01:02  [ main:80532 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='宝鸡', score=1894.0}
+2018-05-22 11:01:02  [ main:80532 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='毕节', score=848.0}
+2018-05-22 11:01:02  [ main:80532 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='滨江', score=498.0}
+2018-05-22 11:01:02  [ main:80532 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='八街', score=124.0}
+2018-05-22 11:01:02  [ main:80534 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='便捷', score=112.0}
+2018-05-22 11:01:02  [ main:80535 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北郡', score=62.0}
+2018-05-22 11:01:02  [ main:80535 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='布吉', score=42.0}
+2018-05-22 11:01:02  [ main:80535 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='坝街', score=40.0}
+2018-05-22 11:01:02  [ main:80536 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='铂金', score=40.0}
+2018-05-22 11:01:02  [ main:80536 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='铂郡', score=36.0}
+2018-05-22 11:01:02  [ main:80536 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北滘', score=22.0}
+2018-05-22 11:01:02  [ main:80536 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='伯爵', score=21.0}
+2018-05-22 11:01:02  [ main:80537 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='百捷', score=21.0}
+2018-05-22 11:01:02  [ main:80537 ] - [ DEBUG ]  candidateItemList count : 15
+2018-05-22 11:01:07  [ main:85529 ] - [ DEBUG ]  input : tj
+2018-05-22 11:01:07  [ main:85530 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:01:07  [ main:85530 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : tj
+2018-05-22 11:01:07  [ main:85531 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果tj
+2018-05-22 11:01:07  [ main:85531 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 11:01:07  [ main:85531 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='天津', score=22707.0}
+2018-05-22 11:01:07  [ main:85532 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='团结', score=114.0}
+2018-05-22 11:01:07  [ main:85532 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='桃江', score=92.0}
+2018-05-22 11:01:07  [ main:85532 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='停车', score=86.0}
+2018-05-22 11:01:07  [ main:85533 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='天街', score=84.0}
+2018-05-22 11:01:07  [ main:85533 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='天健', score=64.0}
+2018-05-22 11:01:07  [ main:85533 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='天骄', score=64.0}
+2018-05-22 11:01:07  [ main:85534 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='天虹', score=58.0}
+2018-05-22 11:01:07  [ main:85535 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='同江', score=53.0}
+2018-05-22 11:01:07  [ main:85535 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='头街', score=50.0}
+2018-05-22 11:01:07  [ main:85536 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='通江', score=50.0}
+2018-05-22 11:01:07  [ main:85536 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='天际', score=34.0}
+2018-05-22 11:01:07  [ main:85536 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='同济', score=34.0}
+2018-05-22 11:01:07  [ main:85537 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='太极', score=27.0}
+2018-05-22 11:01:07  [ main:85537 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='余江', score=25.0}
+2018-05-22 11:01:07  [ main:85537 ] - [ DEBUG ]  candidateItemList count : 15
+2018-05-22 11:01:11  [ main:89083 ] - [ DEBUG ]  input : sh
+2018-05-22 11:01:11  [ main:89084 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:01:11  [ main:89084 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : sh
+2018-05-22 11:01:11  [ main:89085 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果sh
+2018-05-22 11:01:11  [ main:89085 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 11:01:11  [ main:89086 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='上海', score=52173.0}
+2018-05-22 11:01:11  [ main:89086 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='三环', score=1382.0}
+2018-05-22 11:01:11  [ main:89087 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='三巷', score=1144.0}
+2018-05-22 11:01:11  [ main:89087 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='三河', score=815.0}
+2018-05-22 11:01:11  [ main:89091 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='四巷', score=810.0}
+2018-05-22 11:01:11  [ main:89092 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='四会', score=436.0}
+2018-05-22 11:01:11  [ main:89092 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='绥化', score=410.0}
+2018-05-22 11:01:11  [ main:89093 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='沙河', score=351.0}
+2018-05-22 11:01:11  [ main:89093 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='射洪', score=205.0}
+2018-05-22 11:01:11  [ main:89093 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='上杭', score=164.0}
+2018-05-22 11:01:11  [ main:89093 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='泗洪', score=162.0}
+2018-05-22 11:01:11  [ main:89094 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='十巷', score=156.0}
+2018-05-22 11:01:11  [ main:89094 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='四环', score=140.0}
+2018-05-22 11:01:11  [ main:89094 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='商河', score=130.0}
+2018-05-22 11:01:11  [ main:89094 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='社会', score=128.0}
+2018-05-22 11:01:11  [ main:89094 ] - [ DEBUG ]  candidateItemList count : 15
+2018-05-22 11:01:19  [ main:97838 ] - [ DEBUG ]  input : zgc
+2018-05-22 11:01:19  [ main:97838 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:01:19  [ main:97838 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : zgc
+2018-05-22 11:01:19  [ main:97839 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果zgc
+2018-05-22 11:01:19  [ main:97839 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 11:01:19  [ main:97839 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='中关村', score=1362.0}
+2018-05-22 11:01:19  [ main:97840 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='张家村', score=40.0}
+2018-05-22 11:01:19  [ main:97840 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='政广场', score=36.0}
+2018-05-22 11:01:19  [ main:97840 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='中港城', score=25.0}
+2018-05-22 11:01:19  [ main:97840 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='朱家村', score=22.0}
+2018-05-22 11:01:19  [ main:97841 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='中庚城', score=17.0}
+2018-05-22 11:01:19  [ main:97841 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='长堽村', score=14.0}
+2018-05-22 11:01:19  [ main:97841 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='中国城', score=11.0}
+2018-05-22 11:01:19  [ main:97841 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='周家村', score=10.0}
+2018-05-22 11:01:19  [ main:97841 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='钟家村', score=6.0}
+2018-05-22 11:01:19  [ main:97842 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='珠光村', score=6.0}
+2018-05-22 11:01:19  [ main:97842 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='专家村', score=4.0}
+2018-05-22 11:01:19  [ main:97842 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='治广场', score=4.0}
+2018-05-22 11:01:19  [ main:97842 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='渣家村', score=4.0}
+2018-05-22 11:01:19  [ main:97842 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='中共曹', score=3.0}
+2018-05-22 11:01:19  [ main:97843 ] - [ DEBUG ]  candidateItemList count : 15
+2018-05-22 11:01:22  [ main:100255 ] - [ DEBUG ]  input : rjy
+2018-05-22 11:01:22  [ main:100255 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:01:22  [ main:100256 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : rjy
+2018-05-22 11:01:22  [ main:100257 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果rjy
+2018-05-22 11:01:22  [ main:100257 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 11:01:22  [ main:100257 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='软件园', score=653.0}
+2018-05-22 11:01:22  [ main:100258 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='荣景园', score=22.0}
+2018-05-22 11:01:22  [ main:100258 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='榕景园', score=16.0}
+2018-05-22 11:01:22  [ main:100258 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='日锦园', score=14.0}
+2018-05-22 11:01:22  [ main:100259 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='润景苑', score=8.0}
+2018-05-22 11:01:22  [ main:100259 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='瑞景园', score=8.0}
+2018-05-22 11:01:22  [ main:100259 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='瑞江苑', score=6.0}
+2018-05-22 11:01:22  [ main:100259 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='融景园', score=6.0}
+2018-05-22 11:01:22  [ main:100259 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='瑞景苑', score=6.0}
+2018-05-22 11:01:22  [ main:100260 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='戎锦苑', score=4.0}
+2018-05-22 11:01:22  [ main:100260 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='荣军苑', score=4.0}
+2018-05-22 11:01:22  [ main:100260 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='荣景苑', score=4.0}
+2018-05-22 11:01:22  [ main:100260 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='软件谷', score=4.0}
+2018-05-22 11:01:22  [ main:100261 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='榕江渔', score=3.0}
+2018-05-22 11:01:22  [ main:100261 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='荣锦苑', score=3.0}
+2018-05-22 11:01:22  [ main:100261 ] - [ DEBUG ]  candidateItemList count : 15
+2018-05-22 11:01:27  [ main:105230 ] - [ DEBUG ]  input : bjzgcyjy
+2018-05-22 11:01:27  [ main:105231 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:01:27  [ main:105231 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : bjzgcyjy
+2018-05-22 11:01:27  [ main:105232 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果bjzgcyjy
+2018-05-22 11:01:27  [ main:105233 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 0
+2018-05-22 11:01:27  [ main:105233 ] - [ DEBUG ]  candidateItemList count : 0
+2018-05-22 11:01:33  [ main:110883 ] - [ DEBUG ]  input : bjzgc
+2018-05-22 11:01:33  [ main:110883 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:01:33  [ main:110883 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : bjzgc
+2018-05-22 11:01:33  [ main:110885 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果bjzgc
+2018-05-22 11:01:33  [ main:110885 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 1
+2018-05-22 11:01:33  [ main:110885 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北京中关村', score=30.0}
+2018-05-22 11:01:33  [ main:110885 ] - [ DEBUG ]  candidateItemList count : 1
+2018-05-22 11:01:38  [ main:116320 ] - [ DEBUG ]  input : xj
+2018-05-22 11:01:38  [ main:116320 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:01:38  [ main:116320 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : xj
+2018-05-22 11:01:38  [ main:116321 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果xj
+2018-05-22 11:01:38  [ main:116321 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 11:01:38  [ main:116322 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='西街', score=3576.0}
+2018-05-22 11:01:38  [ main:116322 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='新街', score=1501.0}
+2018-05-22 11:01:38  [ main:116322 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='新津', score=667.0}
+2018-05-22 11:01:38  [ main:116322 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='辛集', score=489.0}
+2018-05-22 11:01:38  [ main:116322 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='仙居', score=422.0}
+2018-05-22 11:01:38  [ main:116323 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='夏津', score=253.0}
+2018-05-22 11:01:38  [ main:116323 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='西局', score=252.0}
+2018-05-22 11:01:38  [ main:116323 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='小车', score=226.0}
+2018-05-22 11:01:38  [ main:116323 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='学校', score=214.0}
+2018-05-22 11:01:38  [ main:116323 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='下街', score=213.0}
+2018-05-22 11:01:38  [ main:116323 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='斜街', score=200.0}
+2018-05-22 11:01:38  [ main:116324 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='香街', score=130.0}
+2018-05-22 11:01:38  [ main:116324 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='新绛', score=111.0}
+2018-05-22 11:01:38  [ main:116324 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='夏街', score=96.0}
+2018-05-22 11:01:38  [ main:116324 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='小街', score=90.0}
+2018-05-22 11:01:38  [ main:116324 ] - [ DEBUG ]  candidateItemList count : 15
+2018-05-22 11:01:40  [ main:118610 ] - [ DEBUG ]  input : xa
+2018-05-22 11:01:40  [ main:118610 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:01:40  [ main:118611 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : xa
+2018-05-22 11:01:40  [ main:118611 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果xa
+2018-05-22 11:01:40  [ main:118611 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 11:01:40  [ main:118612 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='西安', score=21107.0}
+2018-05-22 11:01:40  [ main:118612 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='兴安', score=602.0}
+2018-05-22 11:01:40  [ main:118612 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='新安', score=526.0}
+2018-05-22 11:01:40  [ main:118612 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='西岸', score=23.0}
+2018-05-22 11:01:40  [ main:118612 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='新澳', score=14.0}
+2018-05-22 11:01:40  [ main:118612 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='熙岸', score=14.0}
+2018-05-22 11:01:40  [ main:118613 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='现厂', score=14.0}
+2018-05-22 11:01:40  [ main:118613 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='新岸', score=13.0}
+2018-05-22 11:01:40  [ main:118613 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='新奥', score=11.0}
+2018-05-22 11:01:40  [ main:118613 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='祥安', score=10.0}
+2018-05-22 11:01:40  [ main:118613 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='鑫安', score=10.0}
+2018-05-22 11:01:40  [ main:118614 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='信安', score=9.0}
+2018-05-22 11:01:40  [ main:118614 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='辛安', score=6.0}
+2018-05-22 11:01:40  [ main:118614 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='欣安', score=6.0}
+2018-05-22 11:01:40  [ main:118614 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='翔安', score=6.0}
+2018-05-22 11:01:40  [ main:118614 ] - [ DEBUG ]  candidateItemList count : 15
+2018-05-22 11:01:44  [ main:122501 ] - [ DEBUG ]  input : nj
+2018-05-22 11:01:44  [ main:122502 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:01:44  [ main:122502 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : nj
+2018-05-22 11:01:44  [ main:122502 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果nj
+2018-05-22 11:01:44  [ main:122502 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 11:01:44  [ main:122502 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='南京', score=25931.0}
+2018-05-22 11:01:44  [ main:122503 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='南街', score=2977.0}
+2018-05-22 11:01:44  [ main:122503 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='内江', score=515.0}
+2018-05-22 11:01:44  [ main:122503 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='牛街', score=188.0}
+2018-05-22 11:01:44  [ main:122503 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='宁津', score=179.0}
+2018-05-22 11:01:44  [ main:122503 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='宁晋', score=128.0}
+2018-05-22 11:01:44  [ main:122504 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='南靖', score=108.0}
+2018-05-22 11:01:44  [ main:122504 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='嫩江', score=95.0}
+2018-05-22 11:01:44  [ main:122504 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='南江', score=57.0}
+2018-05-22 11:01:44  [ main:122505 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='内街', score=54.0}
+2018-05-22 11:01:44  [ main:122505 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='南郡', score=35.0}
+2018-05-22 11:01:44  [ main:122505 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='南郊', score=28.0}
+2018-05-22 11:01:44  [ main:122505 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='农机', score=23.0}
+2018-05-22 11:01:44  [ main:122505 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='弄街', score=20.0}
+2018-05-22 11:01:44  [ main:122505 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='宁强', score=13.0}
+2018-05-22 11:01:44  [ main:122506 ] - [ DEBUG ]  candidateItemList count : 15
+2018-05-22 11:03:07  [ main:205049 ] - [ DEBUG ]  input : shanghai
+2018-05-22 11:03:07  [ main:205049 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:03:07  [ main:205050 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : shanghai
+2018-05-22 11:03:07  [ main:205050 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果shanghai
+2018-05-22 11:03:07  [ main:205050 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 0
+2018-05-22 11:03:07  [ main:205050 ] - [ DEBUG ]  candidateItemList count : 0
+2018-05-22 11:15:54  [ main:972161 ] - [ DEBUG ]  input : bj
+2018-05-22 11:15:54  [ main:972162 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:15:54  [ main:972162 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : bj
+2018-05-22 11:15:54  [ main:972163 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果bj
+2018-05-22 11:15:54  [ main:972163 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 11:15:54  [ main:972164 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北京', score=59295.0}
+2018-05-22 11:15:54  [ main:972164 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北街', score=2957.0}
+2018-05-22 11:15:54  [ main:972164 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='宝鸡', score=1894.0}
+2018-05-22 11:15:54  [ main:972164 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='毕节', score=848.0}
+2018-05-22 11:15:54  [ main:972166 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='滨江', score=498.0}
+2018-05-22 11:15:54  [ main:972166 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='八街', score=124.0}
+2018-05-22 11:15:54  [ main:972166 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='便捷', score=112.0}
+2018-05-22 11:15:54  [ main:972166 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北郡', score=62.0}
+2018-05-22 11:15:54  [ main:972167 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='布吉', score=42.0}
+2018-05-22 11:15:54  [ main:972167 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='坝街', score=40.0}
+2018-05-22 11:15:54  [ main:972170 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='铂金', score=40.0}
+2018-05-22 11:15:54  [ main:972170 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='铂郡', score=36.0}
+2018-05-22 11:15:54  [ main:972170 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北滘', score=22.0}
+2018-05-22 11:15:54  [ main:972171 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='伯爵', score=21.0}
+2018-05-22 11:15:54  [ main:972172 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='百捷', score=21.0}
+2018-05-22 11:15:54  [ main:972172 ] - [ DEBUG ]  candidateItemList count : 15
+2018-05-22 11:22:29  [ main:0 ] - [ DEBUG ]  simpleSpellDict size : 442916
+2018-05-22 11:24:52  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-22 11:24:56  [ main:3447 ] - [ DEBUG ]  loadSpellDict dict size : 442916
+2018-05-22 11:24:56  [ main:3585 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-22 11:24:56  [ main:3586 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
+2018-05-22 11:24:56  [ main:3589 ] - [ DEBUG ]  加载 IMEngineInstance 成功
+2018-05-22 11:25:01  [ main:8468 ] - [ DEBUG ]  input : BJ
+2018-05-22 11:25:01  [ main:8469 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:25:01  [ main:8469 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : BJ
+2018-05-22 11:25:01  [ main:8515 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果BJ
+2018-05-22 11:25:01  [ main:8516 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 0
+2018-05-22 11:25:01  [ main:8516 ] - [ DEBUG ]  candidateItemList count : 0
+2018-05-22 11:25:03  [ main:10724 ] - [ DEBUG ]  input : bj
+2018-05-22 11:25:03  [ main:10725 ] - [ DEBUG ]  input is pinyin
+2018-05-22 11:25:03  [ main:10725 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : bj
+2018-05-22 11:25:03  [ main:10788 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果bj
+2018-05-22 11:25:03  [ main:10789 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 11:25:03  [ main:10792 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北京', score=59295.0}
+2018-05-22 11:25:03  [ main:10793 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北街', score=2957.0}
+2018-05-22 11:25:03  [ main:10793 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='宝鸡', score=1894.0}
+2018-05-22 11:25:03  [ main:10794 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='毕节', score=848.0}
+2018-05-22 11:25:03  [ main:10794 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='滨江', score=498.0}
+2018-05-22 11:25:03  [ main:10794 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='八街', score=124.0}
+2018-05-22 11:25:03  [ main:10795 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='便捷', score=112.0}
+2018-05-22 11:25:03  [ main:10795 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北郡', score=62.0}
+2018-05-22 11:25:03  [ main:10795 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='布吉', score=42.0}
+2018-05-22 11:25:03  [ main:10796 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='坝街', score=40.0}
+2018-05-22 11:25:03  [ main:10796 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='铂金', score=40.0}
+2018-05-22 11:25:03  [ main:10797 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='铂郡', score=36.0}
+2018-05-22 11:25:03  [ main:10798 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北滘', score=22.0}
+2018-05-22 11:25:03  [ main:10799 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='伯爵', score=21.0}
+2018-05-22 11:25:03  [ main:10799 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='百捷', score=21.0}
+2018-05-22 11:25:03  [ main:10799 ] - [ DEBUG ]  candidateItemList count : 15
+2018-05-22 13:02:43  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-22 13:02:48  [ main:4786 ] - [ DEBUG ]  loadSpellDict dict size : 442916
+2018-05-22 13:02:48  [ main:4812 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-22 13:02:48  [ main:4820 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
+2018-05-22 13:02:48  [ main:4822 ] - [ DEBUG ]  加载 IMEngineInstance 成功
+2018-05-22 13:02:50  [ main:7111 ] - [ DEBUG ]  input : bj
+2018-05-22 13:02:50  [ main:7112 ] - [ DEBUG ]  input is pinyin
+2018-05-22 13:02:50  [ main:7112 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : bj
+2018-05-22 13:02:50  [ main:7155 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果bj
+2018-05-22 13:02:50  [ main:7155 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 13:02:50  [ main:7156 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北京', score=59295.0}
+2018-05-22 13:02:50  [ main:7156 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北街', score=2957.0}
+2018-05-22 13:02:50  [ main:7156 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='宝鸡', score=1894.0}
+2018-05-22 13:02:50  [ main:7156 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='毕节', score=848.0}
+2018-05-22 13:02:50  [ main:7157 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='滨江', score=498.0}
+2018-05-22 13:02:50  [ main:7157 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='八街', score=124.0}
+2018-05-22 13:02:50  [ main:7158 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='便捷', score=112.0}
+2018-05-22 13:02:50  [ main:7159 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北郡', score=62.0}
+2018-05-22 13:02:50  [ main:7159 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='布吉', score=42.0}
+2018-05-22 13:02:50  [ main:7159 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='坝街', score=40.0}
+2018-05-22 13:02:50  [ main:7159 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='铂金', score=40.0}
+2018-05-22 13:02:50  [ main:7160 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='铂郡', score=36.0}
+2018-05-22 13:02:50  [ main:7160 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北滘', score=22.0}
+2018-05-22 13:02:50  [ main:7160 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='伯爵', score=21.0}
+2018-05-22 13:02:50  [ main:7160 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='百捷', score=21.0}
+2018-05-22 13:02:50  [ main:7160 ] - [ DEBUG ]  candidateItemList count : 15
+2018-05-22 13:02:52  [ main:9216 ] - [ DEBUG ]  input : sh
+2018-05-22 13:02:52  [ main:9216 ] - [ DEBUG ]  input is pinyin
+2018-05-22 13:02:52  [ main:9217 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : sh
+2018-05-22 13:02:52  [ main:9217 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果sh
+2018-05-22 13:02:52  [ main:9218 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 13:02:52  [ main:9218 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='上海', score=52173.0}
+2018-05-22 13:02:52  [ main:9218 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='三环', score=1382.0}
+2018-05-22 13:02:52  [ main:9219 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='三巷', score=1144.0}
+2018-05-22 13:02:52  [ main:9219 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='三河', score=815.0}
+2018-05-22 13:02:52  [ main:9219 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='四巷', score=810.0}
+2018-05-22 13:02:52  [ main:9219 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='四会', score=436.0}
+2018-05-22 13:02:52  [ main:9220 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='绥化', score=410.0}
+2018-05-22 13:02:52  [ main:9220 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='沙河', score=351.0}
+2018-05-22 13:02:52  [ main:9221 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='射洪', score=205.0}
+2018-05-22 13:02:52  [ main:9221 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='上杭', score=164.0}
+2018-05-22 13:02:52  [ main:9222 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='泗洪', score=162.0}
+2018-05-22 13:02:52  [ main:9222 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='十巷', score=156.0}
+2018-05-22 13:02:52  [ main:9222 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='四环', score=140.0}
+2018-05-22 13:02:52  [ main:9222 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='商河', score=130.0}
+2018-05-22 13:02:52  [ main:9223 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='社会', score=128.0}
+2018-05-22 13:02:52  [ main:9223 ] - [ DEBUG ]  candidateItemList count : 15
+2018-05-22 13:19:04  [ main:0 ] - [ INFO ]  调用 main 
+2018-05-22 13:19:08  [ main:3586 ] - [ DEBUG ]  loadSpellDict dict size : 442916
+2018-05-22 13:19:08  [ main:3587 ] - [ DEBUG ]  SimpleFrontEnd 构造方法被调用
+2018-05-22 13:19:08  [ main:3588 ] - [ DEBUG ]  SimpleFrontEnd init方法被调用
+2018-05-22 13:19:08  [ main:3589 ] - [ DEBUG ]  加载 IMEngineInstance 成功
+2018-05-22 13:19:33  [ main:28452 ] - [ DEBUG ]  input : bj
+2018-05-22 13:19:33  [ main:28453 ] - [ DEBUG ]  input is pinyin
+2018-05-22 13:19:33  [ main:28453 ] - [ DEBUG ]  SimpleFrontEnd handleInputString 方法被调用 input : bj
+2018-05-22 13:19:33  [ main:28465 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 拼接结果bj
+2018-05-22 13:19:33  [ main:28465 ] - [ DEBUG ]  SimpleIMEngineInstance :: getCandidateWords 结果数量 count : 15
+2018-05-22 13:19:33  [ main:28465 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北京', score=59295.0}
+2018-05-22 13:19:33  [ main:28466 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北街', score=2957.0}
+2018-05-22 13:19:33  [ main:28466 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='宝鸡', score=1894.0}
+2018-05-22 13:19:33  [ main:28466 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='毕节', score=848.0}
+2018-05-22 13:19:33  [ main:28466 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='滨江', score=498.0}
+2018-05-22 13:19:33  [ main:28466 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='八街', score=124.0}
+2018-05-22 13:19:33  [ main:28468 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='便捷', score=112.0}
+2018-05-22 13:19:33  [ main:28468 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北郡', score=62.0}
+2018-05-22 13:19:33  [ main:28468 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='布吉', score=42.0}
+2018-05-22 13:19:33  [ main:28468 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='坝街', score=40.0}
+2018-05-22 13:19:33  [ main:28469 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='铂金', score=40.0}
+2018-05-22 13:19:33  [ main:28469 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='铂郡', score=36.0}
+2018-05-22 13:19:33  [ main:28469 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='北滘', score=22.0}
+2018-05-22 13:19:33  [ main:28469 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='伯爵', score=21.0}
+2018-05-22 13:19:33  [ main:28469 ] - [ DEBUG ]  candidateItems :CandidateItem{splitResult=null, candidateWord='百捷', score=21.0}
+2018-05-22 13:19:33  [ main:28470 ] - [ DEBUG ]  candidateItemList count : 15

@@ -9,6 +9,13 @@
 
 1. 概率要取log 这样可以从累乘变成累加
 2. 工厂方法 link https://www.cnblogs.com/zhangchenliang/p/3700820.html
+
+# 0521 
+获取全拼 (pinyin\[)(\"[a-z]*\")(.*)
+
+# 0522
+序列化与反序列化 link https://blog.csdn.net/u012901117/article/details/78365359
+.ignore 插件 link https://blog.csdn.net/qq_34590097/article/details/56284935
 # 遇到的问题
 1. java 中怎么实现那种类似逐字符访问，监听的读取。
 2. 配置怎么访问，应该不能做成一个全局的对象

@@ -6,7 +6,6 @@ public class CandidateItem {
     private SplitResultItem splitResult;
     private String candidateWord;
     private Double score;
-
     public CandidateItem() {
     }
 
