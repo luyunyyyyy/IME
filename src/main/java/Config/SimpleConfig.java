@@ -509,7 +509,7 @@ public final class SimpleConfig implements ConfigService {
 
     public static final double PI = 3.14159;
     public static final double CANDIDATE_WORDS_COUNT = 15;
-
+    public static final Integer SIMPLE_SPELL_CANDIDATE_COUNT = 15;
     public static Set<String> getCompleteSpellSet() {
         return completeSpellSet;
     }
