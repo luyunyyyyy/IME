@@ -26,10 +26,10 @@ public class SimpleViterbi {
     }
 
     /**
-     * @param emit
+     * @param emit 转换矩阵
      * @param state   汉字
      * @param cur_obs 当前的拼音
-     * @return
+     * @return 返回的是频数 或最小的一个MIN_PROB
      */
     private static Double emit_a_b(HashMap<String, HashMap<String, Double>> emit, String state, String cur_obs) {
         if (emit.containsKey(state) && emit.get(state).containsKey(cur_obs)) {
@@ -52,7 +52,7 @@ public class SimpleViterbi {
      * @param py2ch  pinyin -> chinese 的概率
      * @param PI     pinyin 的初始概率
      * @param emit   chinese -> pinyin 的概率
-     * @return
+     * @return 返回的是频数 或最小的一个MIN_PROB
      */
     public static List<CandidateItem> topkPath(List<SplitResultItem> pyList, int top,
                                                HashMap<String, HashMap<String, Double>> py2ch,
@@ -95,7 +95,7 @@ public class SimpleViterbi {
             cur_cand_states = py2ch.get(cur_obs);
             V[idx] = new HashMap<>();
             for (String curState : cur_cand_states.keySet()) {
-
+                V[(idx)].put(curState, new TopKHeap<>(top, new PairListComparator()));
                 for (String prevState : prevStates.keySet()) {
                     for (Pair<Double, List<String>> cand : V[((idx + 1) % 2)].get(prevState)) {
                         score = emit_a_b(emit, curState, cur_obs) + emit_a_b(trans, prevState, curState);
@@ -103,11 +103,11 @@ public class SimpleViterbi {
                         ArrayList<String> tempPath;
                         tempPath = new ArrayList<>(cand.getValue());
                         tempPath.add(curState);
-
-                        V[(idx)].put(curState, new TopKHeap<Pair<Double, List<String>>>(top, new PairListComparator()) {{
-                                    add(new Pair<>(newScore, tempPath));
-                                }}
-                        ); // get的可能是null
+                        V[(idx)].get(curState).add(new Pair<>(newScore, tempPath));
+//                        V[(idx)].put(curState, new TopKHeap<Pair<Double, List<String>>>(top, new PairListComparator()) {{
+//                                    add(new Pair<>(newScore, tempPath));//这个地方不应该put一个新对象进去
+//                                }}
+//                        ); // get的可能是null
                     }
                 }
             }
