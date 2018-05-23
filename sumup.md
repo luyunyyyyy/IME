@@ -16,6 +16,9 @@
 # 0522
 序列化与反序列化 link https://blog.csdn.net/u012901117/article/details/78365359
 .ignore 插件 link https://blog.csdn.net/qq_34590097/article/details/56284935
+
+https://blog.csdn.net/qq_27986007/article/details/78498560
+http://commons.apache.org/proper/commons-lang/javadocs/api-2.4/
 # 遇到的问题
 1. java 中怎么实现那种类似逐字符访问，监听的读取。
 2. 配置怎么访问，应该不能做成一个全局的对象
