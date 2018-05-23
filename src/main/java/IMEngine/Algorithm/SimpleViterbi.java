@@ -6,6 +6,7 @@ import Util.TopKHeap;
 import javafx.util.Pair;
 import org.apache.commons.lang.StringUtils;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -62,47 +63,57 @@ public class SimpleViterbi {
             v 接替表示当前状态和上一状态的结果
          */
         Integer idx = 0;
-        ArrayList<HashMap<String, TopKHeap<Pair<Double, List<String>>>>> V = new ArrayList<>();
+//        HashMap<String, TopKHeap<Pair<Double, List<String>>>>[] V = new HashMap<?>[2];
+        HashMap<String, TopKHeap<Pair<Double, List<String>>>>[] V = (HashMap<String, TopKHeap<Pair<Double, List<String>>>>[])
+                Array.newInstance(HashMap.class, 2);
         String cur_obs = pyList.get(0).getPyItem(); // 当前的拼音 第一个位置
         HashMap<String, Double> cur_cand_states = py2ch.get(cur_obs); // 当前拼音对应的汉字集合
         HashMap<String, Double> prevStates;
         Double score;
         ArrayList<String> path;
-        ArrayList<String> tempPath;
+
         Integer pyListLenght = pyList.size();
         TopKHeap<Pair<Double, List<String>>> result = new TopKHeap<>(top, new PairListComparator());
         List<CandidateItem> finalResult = new ArrayList<>();
+        HashMap<String, TopKHeap<Pair<Double, List<String>>>> heapHashMap = new HashMap<>();
         for (String state : cur_cand_states.keySet()) {
             score = PI_state(PI, state) + emit_a_b(emit, state, cur_obs);    // +
             path = new ArrayList<>();
             path.add(state);
             //new HashMap<>()new TopKHeap<Pair<Double, List<String>>>(top)
-            HashMap<String, TopKHeap<Pair<Double, List<String>>>> heapHashMap = new HashMap<>();
+            //此处每次都会覆盖
             heapHashMap.put(state, new TopKHeap<>(top, new PairListComparator()));
             heapHashMap.get(state).add(new Pair<>(score, path));
-            V.add(0, heapHashMap);
+            V[0] = heapHashMap;
             //V.add(0, new PriorityQueue<>());
         }
         for (int i = 1; i < pyListLenght; i++) {
             cur_obs = pyList.get(i).getPyItem();
             idx = i % 2;
-            V.add(idx, null);
+            V[idx] = null;
             prevStates = cur_cand_states;
             cur_cand_states = py2ch.get(cur_obs);
+            V[idx] = new HashMap<>();
             for (String curState : cur_cand_states.keySet()) {
+
                 for (String prevState : prevStates.keySet()) {
-                    for (Pair<Double, List<String>> cand : V.get((idx + 1) % 2).get(prevState)) {
+                    for (Pair<Double, List<String>> cand : V[((idx + 1) % 2)].get(prevState)) {
                         score = emit_a_b(emit, curState, cur_obs) + emit_a_b(trans, prevState, curState);
                         Double newScore = score + cand.getKey();
+                        ArrayList<String> tempPath;
                         tempPath = new ArrayList<>(cand.getValue());
                         tempPath.add(curState);
-                        V.get(idx).get(curState).add(new Pair<>(newScore, tempPath));
+
+                        V[(idx)].put(curState, new TopKHeap<Pair<Double, List<String>>>(top, new PairListComparator()) {{
+                                    add(new Pair<>(newScore, tempPath));
+                                }}
+                        ); // get的可能是null
                     }
                 }
             }
         }
-        for (String lastState : V.get(idx).keySet()) {
-            for (Pair<Double, List<String>> item : V.get(idx).get(lastState)) {
+        for (String lastState : V[(idx)].keySet()) {
+            for (Pair<Double, List<String>> item : V[idx].get(lastState)) {
                 result.add(new Pair<>(item.getKey(), item.getValue()));
             }
         }
