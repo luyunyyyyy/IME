@@ -32,24 +32,13 @@ public class TopKHeap<E> implements Iterable<E> {
         for (int n : array) {
             pq.add(n);
         }
-        //System.out.println(pq.sortedList());
     }
-
-//    public List<E> sortedList() {
-//        List<E> list = new ArrayList<>(queue);
-//        Collections.sort(list);
-//        return list;
-//    }
 
     public void add(E e) {
         if (queue.size() < maxSize) {
             queue.add(e);
         } else {
-            E peek = (E) queue.peek();
-//            if (e.compareTo(peek) > 0) {
-//                queue.poll();
-//                queue.add(e);
-//            }
+            E peek = queue.peek();
             if (comparator.compare(e, peek) > 0) {
                 queue.poll();
                 queue.add(e);
@@ -57,8 +46,16 @@ public class TopKHeap<E> implements Iterable<E> {
         }
     }
 
+    public E poll() {
+        return queue.poll();
+    }
+
     @Override
     public Iterator<E> iterator() {
         return queue.iterator();
+    }
+
+    public int size() {
+        return this.queue.size();
     }
 }
