@@ -15,6 +15,6 @@ public class PairListComparator implements Comparator<Pair<Double, List<String>>
 
     @Override
     public int compare(Pair<Double, List<String>> o1, Pair<Double, List<String>> o2) {
-        return (int) (o2.getKey() - o1.getKey());
+        return (int) (o1.getKey() - o2.getKey());
     }
 }
