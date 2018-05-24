@@ -1,5 +1,6 @@
 package IMEngine;
 
+import Config.SimpleConfig;
 import Util.*;
 import javafx.util.Pair;
 import org.apache.log4j.Logger;
@@ -7,6 +8,7 @@ import org.apache.log4j.Logger;
 import java.util.*;
 
 import static Config.SimpleConfig.CANDIDATE_WORDS_COUNT;
+import static IMEngine.Algorithm.SimpleViterbi.topkPath;
 
 /*
     这是一个返回拼音切分结果的引擎.
@@ -17,10 +19,19 @@ public class SimpleIMEngineInstance implements IMEngineInstance {
     private Logger logger = Logger.getLogger(SimpleIMEngineInstance.class);
     //< 简拼, < 汉字, 出现次数>>
     private HashMap<String, ArrayList<Pair<String, Double>>> simpleSpellDict;
+    private HashMap<String, HashMap<String, Double>> py2ch;
+    private HashMap<String, Double> PI;
+    private HashMap<String, HashMap<String, Double>> emit;
+    private HashMap<String, HashMap<String, Double>> trans;
 
-    public SimpleIMEngineInstance(HashMap<String, ArrayList<Pair<String, Double>>> simpleSpellDict) {
+    public SimpleIMEngineInstance(HashMap<String, ArrayList<Pair<String, Double>>> simpleSpellDict, HashMap<String, HashMap<String, Double>> py2ch, HashMap<String, Double> pi, HashMap<String, HashMap<String, Double>> emit, HashMap<String, HashMap<String, Double>> trans) {
         this.simpleSpellDict = simpleSpellDict;
+        this.py2ch = py2ch;
+        this.PI = pi;
+        this.emit = emit;
+        this.trans = trans;
     }
+
 
     public static void main(String[] args) {
         //new SimpleIMEngineInstance().getCandidateWords()
@@ -33,8 +44,7 @@ public class SimpleIMEngineInstance implements IMEngineInstance {
     @Deprecated
     public List<String> getCandidateWord(String pySeries) {
         logger.debug("调用 getCandidateWord 获得拼音切分序列");
-        ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(pySeries.split(" ")));
-        return arrayList;
+        return new ArrayList<>(Arrays.asList(pySeries.split(" ")));
     }
 //    private List<CandidateItem> getCandidateWordsFromDict(List<SplitResultItem> splitResultItems, String simpleSpell,List<CandidateItem> candidateItems){
 //        //candidateItems.add(new CandidateItem("北京"));
@@ -75,6 +85,13 @@ public class SimpleIMEngineInstance implements IMEngineInstance {
                 break;
             case COMPLETESPELLINPUT:
                 logger.debug("pinYinInputType is COMPLETESPELLINPUT");
+                candidateItemList = topkPath(splitResultItems,
+                        SimpleConfig.SIMPLE_SPELL_CANDIDATE_COUNT,
+                        py2ch,
+                        PI,
+                        emit,
+                        trans);
+
                 break;
             case SIMPLESPELLINPUT:
                 logger.debug("pinYinInputType is SIMPLESPELLINPUT");

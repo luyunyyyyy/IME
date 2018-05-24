@@ -8,6 +8,7 @@ import org.apache.commons.lang.StringUtils;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class SimpleViterbi {
     }
 
     /**
-     * @param emit 转换矩阵
+     * @param emit    转换矩阵
      * @param state   汉字
      * @param cur_obs 当前的拼音
      * @return 返回的是频数 或最小的一个MIN_PROB
@@ -76,21 +77,26 @@ public class SimpleViterbi {
         TopKHeap<Pair<Double, List<String>>> result = new TopKHeap<>(top, new PairListComparator());
         List<CandidateItem> finalResult = new ArrayList<>();
         HashMap<String, TopKHeap<Pair<Double, List<String>>>> heapHashMap = new HashMap<>();
+        V[0] = heapHashMap;
         for (String state : cur_cand_states.keySet()) {
             score = PI_state(PI, state) + emit_a_b(emit, state, cur_obs);    // +
             path = new ArrayList<>();
             path.add(state);
             //new HashMap<>()new TopKHeap<Pair<Double, List<String>>>(top)
             //此处每次都会覆盖
-            heapHashMap.put(state, new TopKHeap<>(top, new PairListComparator()));
-            heapHashMap.get(state).add(new Pair<>(score, path));
-            V[0] = heapHashMap;
+            Double finalScore = score;
+            ArrayList<String> finalPath = path;
+            heapHashMap.put(state, new TopKHeap<Pair<Double, List<String>>>(top, new PairListComparator()) {{
+                add(new Pair<>(finalScore, finalPath));
+            }});
+            //heapHashMap.get(state).add(new Pair<>(score, path));
+
             //V.add(0, new PriorityQueue<>());
         }
         for (int i = 1; i < pyListLenght; i++) {
             cur_obs = pyList.get(i).getPyItem();
             idx = i % 2;
-            V[idx] = null;
+            //V[idx] = null;
             prevStates = cur_cand_states;
             cur_cand_states = py2ch.get(cur_obs);
             V[idx] = new HashMap<>();
@@ -104,10 +110,6 @@ public class SimpleViterbi {
                         tempPath = new ArrayList<>(cand.getValue());
                         tempPath.add(curState);
                         V[(idx)].get(curState).add(new Pair<>(newScore, tempPath));
-//                        V[(idx)].put(curState, new TopKHeap<Pair<Double, List<String>>>(top, new PairListComparator()) {{
-//                                    add(new Pair<>(newScore, tempPath));//这个地方不应该put一个新对象进去
-//                                }}
-//                        ); // get的可能是null
                     }
                 }
             }
@@ -117,9 +119,17 @@ public class SimpleViterbi {
                 result.add(new Pair<>(item.getKey(), item.getValue()));
             }
         }
-        for (Pair<Double, List<String>> pair : result) {
-            finalResult.add(new CandidateItem(StringUtils.join(new List[]{pair.getValue()}), pair.getKey()));
+//        for (Pair<Double, List<String>> pair : result) {
+//            finalResult.add(new CandidateItem(StringUtils.join(new List[]{pair.getValue()}), pair.getKey()));
+//        }
+        Pair<Double, List<String>> tempPair;
+        // poll的时候 result的size会变化 导致迭代次数只有一半
+        int size = result.size();
+        for (int i = 0; i < size; i++) {
+            tempPair = result.poll();
+            finalResult.add(new CandidateItem(StringUtils.join(tempPair.getValue(), ""), tempPair.getKey()));
         }
+        Collections.reverse(finalResult);
         return finalResult;
     }
 }
