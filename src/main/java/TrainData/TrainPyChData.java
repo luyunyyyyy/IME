@@ -24,8 +24,12 @@ public class TrainPyChData {
     public static void trainData() throws IOException {
         HashMap<String, HashMap<String, Double>> py2ch = new HashMap<>();
         HashMap<String, Double> PI = new HashMap<>();
+        HashMap<String, Double> pyPI = new HashMap<>();
+
         HashMap<String, HashMap<String, Double>> emit = new HashMap<>();
         HashMap<String, HashMap<String, Double>> trans = new HashMap<>();
+        HashMap<String, HashMap<String, Double>> pyTrans = new HashMap<>();
+        HashMap<String, HashMap<String, Double>> pyEmit = new HashMap<>();
         readfile(TRAIN_DATA_INPUT_ROOT_PATH
                 + CORPUS_DIR_NAME);
         logger.info(corpus.size());
@@ -46,8 +50,10 @@ public class TrainPyChData {
                  */
                 if (PI.containsKey(hanziList[0])) {
                     PI.put(hanziList[0], PI.get(hanziList[0]) + 1);
+                    pyPI.put(pyList[0], pyPI.get(pyList[0]) + 1);
                 } else {
                     PI.put(hanziList[0], 1.0);
+                    pyPI.put(pyList[0], 1.0);
                 }
 
                 for (int i = 0; i < sentence.length() - 1; i++) {
@@ -62,11 +68,12 @@ public class TrainPyChData {
                             trans.get(hanziList[i]).put(hanziList[i + 1], trans.get(hanziList[i]).get(hanziList[i + 1]) + 1.0);
                         }
                     }
+                    inputValueToMap(pyTrans, pyList[i], pyList[i + 1]);
                 }
                 for (int i = 0; i < sentence.length(); i++) {
                     if (!pyList[i].equals(" ") && !hanziList[i].equals(" ")) {
                         inputValueToMap(emit, pyList[i], hanziList[i]);
-
+                        inputValueToMap(pyEmit, pyList[i].substring(0, 1), pyList[i]);
                         if (py2ch.get(pyList[i]) == null) {
                             tmp = new HashMap<>();
                             tmp.put(hanziList[i], 1.);
