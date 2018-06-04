@@ -10,6 +10,9 @@ import Util.SplitResultItem;
 import org.apache.log4j.Logger;
 
 import java.util.List;
+
+import static Util.DataPreProcessing.preProcessing;
+
 /*
     下午要做的 TODO
     1. 如果FrontEnd作为一个调度器和组合的模块, 可以通过 BackEnd 来进行注入
@@ -51,6 +54,7 @@ public class SimpleFrontEnd implements FrontEndService {
         logger.debug("SimpleFrontEnd handleInputString 方法被调用 input : " + input);
 //        String result = PinyinSplit.splitSpell(input);
 //        List<String> candidate = imEngineInstance.getCandidateWord(result);
+        input = preProcessing(input);
         List<SplitResultItem> simpleSplitResult = PinyinSplit.getSplitResultItems(input);
         List<CandidateItem> candidateItemList = imEngineInstance.getCandidateWords(simpleSplitResult);
         if (candidateItemList != null)
