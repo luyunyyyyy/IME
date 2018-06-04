@@ -12,6 +12,8 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static Util.StringUtil.splitResultItemListToString;
+
 public class PinyinSplit {
     private static HashSet<String> hashSet;
     private static Logger logger = Logger.getLogger(PinyinSplit.class);
@@ -65,6 +67,8 @@ public class PinyinSplit {
             }
             splitResultItems.add(new SplitResultItem(tmp, type));
         }
+
+        logger.debug(splitResultItemListToString(splitResultItems));
         return splitResultItems;
     }
 
